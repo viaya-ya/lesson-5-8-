@@ -1,31 +1,62 @@
 .message {
+    margin-left: auto;
 
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 5px;
 }
 
 .imageAndText {
-
+    display: flex;
+    gap: 15px;
 }
 
 .imageAndText img {
-
+    width: 48px;
+    height: 48px;
+    order: 1;
+    align-self: flex-end;
 }
 
 .text {
-
+    margin-left: auto;
+    position: relative;
+    border-radius: 10px;
+    background: #0066CC;
+    box-shadow: 0px 5px 20px 0px #1D212608;
+    padding: 10px;
+    order: 0;
 }
 
 .text:after {
-
+    position: absolute;
+    content: "";
+    bottom: 0;
+    right: -20px;
+    border-left: 10px solid transparent;
+    border-right: 20px solid transparent;
+    border-bottom: 10px solid #0066CC;
 }
 
 .name {
-
+    color: #FFFFFF;
+    font-weight: 600;
 }
 
 .messageText {
+    margin-top: 5px;
+    color: #FFFFFF;
 
+    max-width: 575px;      /* ограничиваем ширину */
+    white-space: pre-wrap;  /* чтобы переносы происходили */
+    word-wrap: break-word;  /* на случай длинных слов */
 }
 
 .time {
-
+    margin-right: 12px;
+    color: #000000;
+    font-family: "Montserrat";
+    font-weight: 600;
+    font-size: 10px;
 }
